@@ -16,134 +16,240 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  {
-    id: "1",
-    name: "Makhana",
-    slug: "makhana",
-    category: "Organic Foods",
-    shortDescription: "Premium quality fox nuts, perfect for healthy snacking",
-    description: "Our premium Makhana (Fox Nuts) are sourced directly from the finest farms in Bihar, India. These puffed lotus seeds are rich in protein, low in calories, and make for an excellent healthy snack option. They are carefully processed to maintain their natural crunch and nutritional value.",
-    details: {
-      origin: "Bihar, India",
-      packaging: "Custom packaging available (1kg, 5kg, 10kg, 25kg bags)",
-      shelfLife: "12 months from manufacturing date",
-      moq: "500 kg",
-      certifications: ["Organic Certified", "FSSAI Approved", "ISO 22000"]
-    },
-    images: ["/products/makhana.jpg", "/products/makhana.jpg", "/products/makhana.jpg"]
+{
+  id: "1",
+  name: "Makhana (Fox Nuts) – Premium Export Quality",
+  slug: "makhana",
+  category: "Organic Foods",
+  shortDescription:
+    "Export-grade premium makhana with excellent puffing, uniform size, and high nutritional value.",
+
+  description:
+    "Our Premium Quality Makhana (Fox Nuts) are carefully sourced from trusted Indian farms and hygienically processed to meet international export standards. Known for their light texture, rich nutritional value, and long shelf life, makhana is a highly demanded superfood in global markets. Each batch is naturally grown, hand-picked, hand-sorted, and cleaned to ensure uniform size, superior taste, excellent puffing, and high purity. Ideal for roasting, seasoning, direct consumption, and use in health foods and snacks worldwide.",
+
+  details: {
+    origin: "India (Direct Farm Sourcing)",
+    packaging:
+      "Bulk & customized export packaging available. Vacuum-sealed and food-grade packaging options.",
+    shelfLife: "12–18 months under proper storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "Export Grade",
+      "Hygienically Processed",
+      "Food Safety Compliant",
+      "Non-GMO"
+    ]
   },
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770387964/makhana_pwt8af.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770387964/makhana2_oo3rmm.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770387964/makhan3_tqmkyw.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770387964/makhana4_ds9j0q.jpg"
+  ]
+}
+,
   {
-    id: "2",
-    name: "Soapnuts",
-    slug: "soapnuts",
-    category: "Natural Products",
-    shortDescription: "100% natural and eco-friendly cleaning alternative",
-    description: "Soapnuts (Reetha) are nature's gift for eco-conscious cleaning. These dried fruit shells contain natural saponins that create a gentle lather, perfect for laundry, dishwashing, and personal care. Our soapnuts are sustainably harvested and sun-dried to preserve their cleaning properties.",
-    details: {
-      origin: "Himalayan Region, India",
-      packaging: "Available in 500g, 1kg, 5kg, and bulk packaging",
-      shelfLife: "24 months",
-      moq: "200 kg",
-      certifications: ["Organic Certified", "Eco-Friendly", "Cruelty-Free"]
-    },
-    images: ["/products/soapnuts.jpg", "/products/soapnuts.jpg", "/products/soapnuts.jpg"]
+  id: "2",
+  name: "Soapnuts (Reetha) – Natural Eco-Friendly Cleaning Product",
+  slug: "soapnuts",
+  category: "Natural Products",
+  shortDescription:
+    "Premium export-grade soapnuts (Reetha) with high saponin content for natural and eco-friendly cleaning.",
+
+  description:
+    "Our premium Soapnuts (Reetha) are sustainably harvested from trusted forest regions in India and naturally sun-dried to preserve their high saponin content. These dried fruit shells produce a gentle, natural lather when soaked in water, making them an ideal eco-friendly alternative to chemical detergents. Carefully hand-sorted, cleaned, and export-graded, our soapnuts offer excellent cleaning efficiency, long shelf life, and consistent quality for global buyers. Suitable for laundry, dishwashing, personal care formulations, and herbal products.",
+
+  details: {
+    origin: "India (Sustainably Harvested Forest Regions)",
+    packaging:
+      "Bulk and customized export packaging available. Food-grade and moisture-protected packaging options.",
+    shelfLife: "24 months under dry storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "Export Grade",
+      "Eco-Friendly Product",
+      "Chemical-Free",
+      "Hygienically Processed"
+    ]
   },
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388121/s1_xd3fzi.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388122/s2_vnsj0e.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388121/s3_pitk9x.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388121/s4_d0fe77.jpg"
+  ]
+}
+, 
   {
-    id: "3",
-    name: "Maize Products",
-    slug: "maize-products",
-    category: "Agricultural Products",
-    shortDescription: "High-quality yellow maize for food and feed industry",
-    description: "We export premium quality yellow maize suitable for food processing, animal feed, and industrial applications. Our maize is carefully selected, cleaned, and graded to meet international quality standards. Available in whole kernel form or processed as per customer requirements.",
-    details: {
-      origin: "Maharashtra & Karnataka, India",
-      packaging: "50kg PP bags or as per buyer requirement",
-      shelfLife: "18 months in proper storage",
-      moq: "25 MT (Metric Tons)",
-      certifications: ["FSSAI Approved", "Non-GMO", "Export Quality"]
-    },
-    images: ["/products/maize.jpg", "/products/maize.jpg", "/products/maize.jpg"]
+  id: "4",
+  name: "Bamboo Salt – Mineral-Rich Gourmet Specialty Salt",
+  slug: "bamboo-salt",
+  category: "Specialty Foods",
+  shortDescription:
+    "Premium mineral-rich bamboo salt, valued in gourmet and health food markets worldwide.",
+
+  description:
+    "Our premium Bamboo Salt is a high-value specialty gourmet salt produced using a traditional roasting process that enhances its mineral content and purity. Carefully refined and hygienically processed, this salt is known for its smooth taste, fine texture, and rich mineral profile. It is widely used in gourmet cooking, health foods, and wellness products due to its purity and unique preparation method. Export-graded and quality tested, our bamboo salt is packed to maintain freshness and long shelf life, making it a preferred choice for international buyers seeking specialty mineral salts.",
+
+  details: {
+    origin: "Traditional Mineral-Enriched Processing",
+    packaging:
+      "Available in retail and bulk export packaging. Moisture-proof, food-grade sealed packaging options.",
+    shelfLife: "Indefinite when stored in a dry, airtight condition",
+    moq: "As per buyer requirement",
+    certifications: [
+      "Export Grade",
+      "Food Safety Compliant",
+      "Hygienically Processed",
+      "Premium Gourmet Quality"
+    ]
   },
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388646/b4_wfyuwd.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388645/b3_ydi2av.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388645/b2_pjskdx.jpg"
+  ]
+}
+,
   {
-    id: "4",
-    name: "Bamboo Salt",
-    slug: "bamboo-salt",
-    category: "Specialty Foods",
-    shortDescription: "Traditional Korean bamboo salt with minerals",
-    description: "Bamboo Salt is a premium artisanal salt roasted multiple times in bamboo cylinders. This ancient Korean technique enriches the salt with essential minerals and removes impurities. Perfect for gourmet cooking and health-conscious consumers seeking natural mineral supplementation.",
-    details: {
-      origin: "Traditional Korean Process",
-      packaging: "100g, 250g, 500g glass jars",
-      shelfLife: "Indefinite (when stored properly)",
-      moq: "100 kg",
-      certifications: ["Food Safety Certified", "Premium Grade"]
-    },
-    images: ["/products/bamboo-salt.jpg", "/products/bamboo-salt.jpg", "/products/bamboo-salt.jpg"]
+  id: "5",
+  name: "Organic Turmeric Powder – High Curcumin Export Grade",
+  slug: "organic-turmeric-powder",
+  category: "Organic Spices",
+  shortDescription:
+    "Premium organic turmeric powder with high curcumin content, vibrant color, and strong aroma for global food and health markets.",
+
+  description:
+    "Our premium Organic Turmeric Powder is sourced from certified organic farms in India, known globally for producing turmeric with high curcumin content. Carefully harvested, sun-dried, and finely ground under hygienic conditions, this turmeric retains its natural color, aroma, and medicinal properties. Rich in antioxidants and anti-inflammatory compounds, it is widely used in food processing, health supplements, Ayurvedic products, and wellness formulations. Each batch is export-graded, lab-tested, and processed to meet international quality standards, ensuring purity, safety, and consistent quality for global buyers.",
+
+  details: {
+    origin: "India (Certified Organic Farms)",
+    packaging:
+      "Available in retail and bulk export packaging. Moisture-proof, food-grade sealed bags and customized packaging options.",
+    shelfLife: "24 months under cool and dry storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "USDA Organic",
+      "EU Organic",
+      "FSSAI Approved",
+      "Export Grade",
+      "Non-GMO"
+    ]
   },
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770387421/turmeric_vcpo3q.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388820/t2_p7btm7.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388820/t3_tqzba8.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388820/t4_fvj0dp.jpg"
+  ]
+}
+,
   {
-    id: "5",
-    name: "Organic Turmeric Powder",
-    slug: "organic-turmeric-powder",
-    category: "Organic Spices",
-    shortDescription: "High curcumin content organic turmeric",
-    description: "Our organic turmeric powder is sourced from the renowned turmeric-growing regions of India. With high curcumin content (3-5%), this golden spice offers exceptional color, flavor, and health benefits. Stone-ground to preserve natural oils and nutrients.",
-    details: {
-      origin: "Erode & Salem, Tamil Nadu, India",
-      packaging: "100g, 500g, 1kg, 25kg bags",
-      shelfLife: "24 months",
-      moq: "500 kg",
-      certifications: ["USDA Organic", "EU Organic", "FSSAI", "Kosher"]
-    },
-    images: ["/products/turmeric.jpg", "/products/turmeric.jpg", "/products/turmeric.jpg"]
+  id: "6",
+  name: "Organic Chilli Powder – High Color & Rich Heat Export Grade",
+  slug: "organic-chilli-powder",
+  category: "Organic Spices",
+  shortDescription:
+    "Premium organic red chilli powder with vibrant natural color, strong aroma, and balanced heat for global food industries.",
+
+  description:
+    "Our premium Organic Chilli Powder is made from carefully selected organic red chillies sourced from leading chilli-growing regions of India. The chillies are naturally sun-dried and finely ground under hygienic processing conditions to retain their natural oils, vibrant red color, rich aroma, and consistent pungency. Known for its high color value and balanced heat level, this chilli powder is widely used in food processing, spice blends, sauces, seasonings, and ready-to-eat products. Each batch is export-graded and quality tested to ensure purity, freshness, and compliance with international food safety standards.",
+
+  details: {
+    origin: "India (Organic Chilli Growing Regions)",
+    packaging:
+      "Available in bulk and retail export packaging. Moisture-proof, food-grade sealed bags with customized options.",
+    shelfLife: "18–24 months under proper storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "USDA Organic",
+      "EU Organic",
+      "FSSAI Approved",
+      "Export Grade",
+      "Non-GMO"
+    ]
   },
-  {
-    id: "6",
-    name: "Organic Chilli Powder",
-    slug: "organic-chilli-powder",
-    category: "Organic Spices",
-    shortDescription: "Vibrant red chilli powder with perfect heat",
-    description: "Made from handpicked organic red chillies, our chilli powder delivers the perfect balance of heat, color, and flavor. Sun-dried and stone-ground using traditional methods to preserve the authentic taste and capsaicin content.",
-    details: {
-      origin: "Guntur, Andhra Pradesh, India",
-      packaging: "100g, 500g, 1kg, 25kg bags",
-      shelfLife: "18 months",
-      moq: "500 kg",
-      certifications: ["USDA Organic", "EU Organic", "FSSAI"]
-    },
-    images: ["/products/chilli-powder.jpg", "/products/chilli-powder.jpg", "/products/chilli-powder.jpg"]
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388984/c2_zxc9yd.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388984/c1_twdmqb.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388984/c3_fdmqsd.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770388984/c4_zwk5im.jpg"
+  ]
+}
+,
+{
+  id: "7",
+  name: "Organic Coconut Oil – Cold-Pressed Virgin Export Grade",
+  slug: "organic-coconut-oil",
+  category: "Organic Oils",
+  shortDescription:
+    "Premium cold-pressed virgin coconut oil with natural aroma, high purity, and wide applications in food, wellness, and cosmetics.",
+
+  description:
+    "Our premium Organic Coconut Oil is extracted from fresh, organically grown coconuts using the cold-press method to preserve its natural nutrients, aroma, and purity. This virgin coconut oil is rich in lauric acid, antioxidants, and healthy fats, making it highly valued in food processing, skincare, haircare, and wellness products. Carefully filtered and hygienically processed, it retains its natural taste, clarity, and long shelf stability. Each batch is export-graded and tested to meet international quality and safety standards, ensuring consistent supply and superior quality for global buyers.",
+
+  details: {
+    origin: "India (Organic Coconut Growing Regions)",
+    packaging:
+      "Available in retail and bulk export packaging. Food-grade bottles, jars, and industrial drums with customized options.",
+    shelfLife: "24 months under cool and dry storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "USDA Organic",
+      "EU Organic",
+      "Virgin Grade",
+      "Export Grade",
+      "Non-GMO"
+    ]
   },
-  {
-    id: "7",
-    name: "Organic Coconut Oil",
-    slug: "organic-coconut-oil",
-    category: "Organic Oils",
-    shortDescription: "Cold-pressed virgin coconut oil",
-    description: "Our organic virgin coconut oil is extracted through cold-pressing fresh coconuts within hours of harvesting. This preserves the natural aroma, nutrients, and lauric acid content. Perfect for cooking, cosmetics, and wellness applications.",
-    details: {
-      origin: "Kerala & Tamil Nadu, India",
-      packaging: "500ml, 1L bottles; 15kg, 200L drums",
-      shelfLife: "24 months",
-      moq: "1000 L",
-      certifications: ["USDA Organic", "Fair Trade", "Virgin Grade"]
-    },
-    images: ["/products/coconut-oil.jpg", "/products/coconut-oil.jpg", "/products/coconut-oil.jpg"]
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389207/o4_h5d4ux.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389206/o3_dkamqm.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389242/o6_ykdetj.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389205/o2_zsplwo.jpg"
+  ]
+}
+,
+ {
+  id: "8",
+  name: "Organic Cumin Seeds – High Aroma Export Grade",
+  slug: "organic-cumin-seeds",
+  category: "Organic Spices",
+  shortDescription:
+    "Premium organic cumin seeds with high essential oil content, strong aroma, and uniform size for global spice markets.",
+
+  description:
+    "Our premium Organic Cumin Seeds are sourced from certified organic farms in leading cumin-growing regions of India. Carefully cleaned, graded, and hygienically processed, these seeds are known for their high volatile oil content, strong natural aroma, and rich flavor profile. Widely used in spice blends, food processing, seasoning, and traditional cuisines, cumin is also valued for its digestive and health benefits. Each batch is export-graded and quality tested to ensure purity, uniform size, and compliance with international food safety standards, making it a reliable choice for global buyers.",
+
+  details: {
+    origin: "India (Certified Organic Cumin Growing Regions)",
+    packaging:
+      "Available in bulk and retail export packaging. Moisture-proof, food-grade sealed bags with customized options.",
+    shelfLife: "24 months under cool and dry storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "USDA Organic",
+      "EU Organic",
+      "FSSAI Approved",
+      "Export Grade",
+      "Non-GMO"
+    ]
   },
-  {
-    id: "8",
-    name: "Organic Cumin Seeds",
-    slug: "organic-cumin-seeds",
-    category: "Organic Spices",
-    shortDescription: "Aromatic whole cumin seeds for global cuisines",
-    description: "Premium organic cumin seeds with high volatile oil content for maximum aroma and flavor. These whole seeds are carefully cleaned, graded, and packed to preserve their essential oils. A staple spice in cuisines worldwide.",
-    details: {
-      origin: "Gujarat & Rajasthan, India",
-      packaging: "100g, 500g, 1kg, 25kg bags",
-      shelfLife: "24 months",
-      moq: "500 kg",
-      certifications: ["USDA Organic", "EU Organic", "FSSAI", "Halal"]
-    },
-    images: ["/products/cumin-seeds.jpg", "/products/cumin-seeds.jpg", "/products/cumin-seeds.jpg"]
-  }
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389404/cu1_ijihcw.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389407/cu4_yzjrip.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389405/cu3_wik9xs.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389615/cu5_odknfi.jpg"
+  ]
+}
+
 ];
 
 export function getProductBySlug(slug: string): Product | undefined {

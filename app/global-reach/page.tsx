@@ -15,30 +15,30 @@ export const metadata: Metadata = {
 const regions = [
   {
     name: "Asia Pacific",
-    countries: ["Japan", "South Korea", "Singapore", "Malaysia", "Thailand", "Vietnam", "Australia", "New Zealand"],
-    description: "Strong presence in East and Southeast Asian markets with growing demand for organic products.",
+    countries: ["Singapore", "Malaysia", "Australia", "Southeast Asia"],
+    description:
+      "Strong presence in Asia-Pacific markets with growing demand for organic and agricultural products.",
   },
   {
     name: "Europe",
-    countries: ["Germany", "UK", "France", "Netherlands", "Italy", "Spain", "Belgium", "Switzerland"],
-    description: "Established partnerships with European importers meeting strict EU quality standards.",
+    countries: ["United Kingdom", "Germany", "European Union"],
+    description:
+      "Established partnerships across Europe meeting strict EU quality and compliance standards.",
   },
   {
     name: "Middle East",
-    countries: ["UAE", "Saudi Arabia", "Qatar", "Kuwait", "Oman", "Bahrain"],
-    description: "Growing market for premium spices and organic food products.",
+    countries: ["United Arab Emirates"],
+    description:
+      "Growing market for premium food products and agricultural exports.",
   },
   {
     name: "Americas",
-    countries: ["USA", "Canada", "Mexico", "Brazil"],
-    description: "Expanding presence in North and South American markets with certified organic products.",
-  },
-  {
-    name: "Africa",
-    countries: ["South Africa", "Kenya", "Nigeria", "Egypt"],
-    description: "Emerging markets with increasing demand for quality agricultural products.",
+    countries: ["Canada"],
+    description:
+      "Expanding export operations with reliable distribution networks.",
   },
 ];
+
 
 const highlights = [
   {
@@ -89,7 +89,7 @@ export default function GlobalReachPage() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="relative aspect-[2/1] overflow-hidden rounded-lg shadow-xl">
             <Image
-              src="/hero/world-map.jpg"
+              src="https://res.cloudinary.com/djjjd6of8/image/upload/v1770389695/g_azogjy.jpg"
               alt="EXORA Global Network"
               fill
               className="object-cover"

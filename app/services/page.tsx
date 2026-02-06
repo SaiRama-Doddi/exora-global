@@ -19,102 +19,101 @@ export const metadata: Metadata = {
   title: "Our Services - EXORA Global Exports",
   description: "Explore our comprehensive export services including sourcing, quality control, logistics, documentation, and end-to-end support.",
 };
-
 const services = [
   {
     icon: Package,
     title: "Product Sourcing",
     description:
-      "We source premium quality products directly from trusted farmers and manufacturers across India. Our extensive network ensures access to the best products at competitive prices.",
+      "We source premium-quality products directly from verified manufacturers and trusted suppliers. Our strong sourcing network ensures consistent quality, competitive pricing, and reliable supply for global buyers.",
     features: [
-      "Direct farm sourcing",
-      "Quality manufacturer partnerships",
-      "Competitive pricing",
-      "Product customization",
+      "Verified manufacturers & suppliers",
+      "Consistent product quality",
+      "Bulk sourcing capability",
+      "Competitive global pricing",
     ],
   },
   {
-    icon: ClipboardCheck,
-    title: "Quality Assurance",
+    icon: Ship,
+    title: "Global Export Services",
     description:
-      "Rigorous quality control processes ensure that every product meets international standards. We conduct thorough inspections at every stage of the supply chain.",
+      "We manage end-to-end export operations, ensuring smooth coordination, regulatory compliance, and timely delivery across international markets.",
     features: [
-      "Pre-shipment inspection",
-      "Laboratory testing",
-      "Certification compliance",
-      "Quality documentation",
+      "Complete export handling",
+      "International trade coordination",
+      "Timely global delivery",
+      "Market-specific export support",
+    ],
+  },
+  {
+    icon: Truck,
+    title: "Logistics & Shipping",
+    description:
+      "Efficient sea and air freight solutions with complete documentation and compliance support. We ensure secure, cost-effective, and on-time global shipments.",
+    features: [
+      "Sea freight & air cargo",
+      "Customs documentation support",
+      "Secure cargo handling",
+      "On-time international delivery",
     ],
   },
   {
     icon: FileCheck,
     title: "Documentation & Compliance",
     description:
-      "We handle all export documentation and ensure compliance with international trade regulations. Our team is well-versed in customs procedures worldwide.",
+      "We handle all export documentation and ensure compliance with international trade regulations, reducing risks and ensuring smooth customs clearance.",
     features: [
       "Export documentation",
-      "Customs clearance",
       "Certificate of origin",
-      "Phytosanitary certificates",
+      "Regulatory compliance",
+      "Customs clearance support",
+    ],
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Customized Trade Solutions",
+    description:
+      "We design tailored export strategies based on your market, product type, and volume requirements, helping businesses scale efficiently in global trade.",
+    features: [
+      "Market-specific strategies",
+      "Product & volume planning",
+      "Flexible order management",
+      "Buyer-focused export planning",
     ],
   },
   {
     icon: Warehouse,
-    title: "Warehousing & Storage",
+    title: "Warehousing & Handling",
     description:
-      "State-of-the-art warehousing facilities ensure proper storage and handling of products. Temperature-controlled options available for sensitive goods.",
+      "Safe and hygienic storage solutions ensure product quality is maintained before shipment. Proper handling processes prevent damage and contamination.",
     features: [
-      "Climate-controlled storage",
+      "Secure storage facilities",
+      "Hygienic product handling",
       "Inventory management",
-      "Secure facilities",
-      "Just-in-time delivery",
-    ],
-  },
-  {
-    icon: Ship,
-    title: "Logistics & Shipping",
-    description:
-      "Comprehensive logistics solutions covering sea, air, and land transportation. We work with leading carriers to ensure timely and safe delivery.",
-    features: [
-      "Sea freight",
-      "Air cargo",
-      "Multimodal transport",
-      "Real-time tracking",
-    ],
-  },
-  {
-    icon: Truck,
-    title: "Last Mile Delivery",
-    description:
-      "Complete door-to-door delivery services ensuring your products reach the final destination safely and on time.",
-    features: [
-      "Door-to-door service",
-      "Delivery scheduling",
-      "Proof of delivery",
-      "Returns management",
+      "Pre-shipment preparation",
     ],
   },
   {
     icon: ShieldCheck,
-    title: "Insurance & Risk Management",
+    title: "Quality Assurance",
     description:
-      "Comprehensive cargo insurance and risk management services to protect your shipments against unforeseen circumstances.",
+      "Strict quality checks and compliance standards are maintained for every shipment, ensuring products meet international buyer expectations.",
     features: [
-      "Cargo insurance",
-      "Risk assessment",
-      "Claims handling",
-      "Coverage options",
+      "Pre-shipment inspections",
+      "Quality grading",
+      "Standards compliance",
+      "Batch consistency checks",
     ],
   },
   {
     icon: HeadphonesIcon,
     title: "Customer Support",
     description:
-      "Dedicated support team available to assist you throughout the export process. From inquiry to delivery, we are here to help.",
+      "Dedicated support from inquiry to final delivery. We focus on building long-term partnerships through transparency, communication, and reliable service.",
     features: [
-      "24/7 support",
-      "Dedicated account manager",
-      "Regular updates",
-      "Issue resolution",
+      "Dedicated export assistance",
+      "Order status updates",
+      "Issue resolution support",
+      "Long-term partnership focus",
     ],
   },
 ];

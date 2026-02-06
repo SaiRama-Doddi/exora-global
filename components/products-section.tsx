@@ -27,7 +27,7 @@ export function ProductsSection() {
           {displayedProducts.map((product) => (
             <Link key={product.id} href={`/products/${product.slug}`}>
               <Card className="group h-full overflow-hidden border-none shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl">
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-4/3 overflow-hidden">
                   <Image
                     src={product.images[0] || "/placeholder.svg"}
                     alt={product.name}

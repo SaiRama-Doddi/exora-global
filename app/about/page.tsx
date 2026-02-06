@@ -64,10 +64,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-foreground">Our Story</h2>
               <p className="mt-4 text-muted-foreground">
-                EXORA Global Exports was founded with a vision to bridge the gap between
-                premium quality Indian products and global markets. What started as a
-                small trading company has grown into a trusted name in international
-                exports.
+                EXORA GLOBAL EXPORTS is a Dynamic export company committed to bridging global markets through quality products, transparent processes and dependable service. We work closely with trusted manufacturers and suppliers to deliver products that meet international standards.
               </p>
               <p className="mt-4 text-muted-foreground">
                 With over 15 years of experience in the export industry, we have built
@@ -76,14 +73,15 @@ export default function AboutPage() {
                 us serve clients in over 50 countries.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Today, EXORA stands as a symbol of reliability, quality, and excellence
-                in the global trade community. We continue to expand our product range
-                and reach, always staying true to our core values.
+               
+
+EGE is an experienced international export company dedicated ro connecting manufacturers wit global buyers,we source products directly from certified supplier and ensure.
+
               </p>
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg shadow-xl lg:aspect-square">
               <Image
-                src="/hero/warehouse.jpg"
+                src="https://res.cloudinary.com/djjjd6of8/image/upload/v1770387315/exora-abouy_xyxrra.jpg"
                 alt="EXORA Warehouse"
                 fill
                 className="object-cover"

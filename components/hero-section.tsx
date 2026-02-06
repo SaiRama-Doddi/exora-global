@@ -8,19 +8,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/hero/shipping-port.jpg",
+    image: "https://res.cloudinary.com/djjjd6of8/image/upload/v1770390232/d1_lkncmi.jpg",
     title: "Connecting the World",
     subtitle: "Through Trade",
     description: "Your Partner in Global Export Solutions",
   },
   {
-    image: "/hero/warehouse.jpg",
+    image: "https://res.cloudinary.com/djjjd6of8/image/upload/v1770390371/tt_upmivy.jpg",
     title: "Quality Products",
     subtitle: "Worldwide Delivery",
     description: "Premium goods sourced from trusted suppliers",
   },
   {
-    image: "/hero/world-map.jpg",
+    image: "https://res.cloudinary.com/djjjd6of8/image/upload/v1770390502/chilli_wtwcvd.jpg",
     title: "Global Network",
     subtitle: "Local Expertise",
     description: "Extensive reach across continents",

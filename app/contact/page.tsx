@@ -115,7 +115,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="mt-4 text-center text-lg text-primary-foreground/80">
-            Get in touch for all your export needs
+          Contact EXORA GLOBAL today for, pricing, and customized export solutions
           </p>
         </div>
       </section>
