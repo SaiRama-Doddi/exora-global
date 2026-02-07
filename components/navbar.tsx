@@ -24,14 +24,14 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/exora-logo.png"
-            alt="EXORA Global Exports"
+            alt="EXORA Global"
             width={90}
             height={90}
             className="rounded-md"
           />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-primary-foreground">EXORA</span>
-            <span className="text-xs text-primary-foreground/80">GLOBAL EXPORTS</span>
+            <span className="text-xs text-primary-foreground/80">GLOBAL</span>
           </div>
         </Link>
 

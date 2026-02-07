@@ -53,14 +53,14 @@ export function Footer() {
             <Link href="/" className="mb-4 flex items-center gap-2">
               <Image
                 src="/images/exora-logo.png"
-                alt="EXORA Global Exports"
+                alt="EXORA Global"
                 width={90}
                 height={90}
                 className="rounded-md"
               />
               <div>
                 <span className="text-xl font-bold">EXORA</span>
-                <span className="block text-xs text-primary-foreground/80">GLOBAL EXPORTS</span>
+                <span className="block text-xs text-primary-foreground/80">GLOBAL</span>
               </div>
             </Link>
             <p className="mb-4 text-sm text-primary-foreground/80">
@@ -144,7 +144,7 @@ export function Footer() {
       <div className="border-t border-primary-foreground/20">
         <div className="container mx-auto px-4 py-4 lg:px-8">
           <p className="text-center text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} EXORA Global Exports. All rights reserved.
+            © {new Date().getFullYear()} EXORA Global. All rights reserved.
           </p>
         </div>
       </div>
