@@ -23,25 +23,25 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@exoraexports.com",
-    link: "mailto:info@exoraexports.com",
+    value: "info@exoraglobal.com",
+    link: "mailto:info@exoraglobal.com",
   },
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 123 456 7890",
-    link: "tel:+911234567890",
+    value: "+91 9490448001",
+    link: "tel:+919490448001",
   },
   {
     icon: MapPin,
     title: "Address",
-    value: "Export Lane, Mumbai, India",
+    value: "Flat No.301, Akruthi's Venkat Klayan Residency Balaji Hill Colony, Road No.2A, Nizampeta - 500090",
     link: null,
   },
   {
     icon: Clock,
     title: "Business Hours",
-    value: "Mon - Sat: 9:00 AM - 6:00 PM IST",
+    value: "Open 24 Hours · 7 Days a Week",
     link: null,
   },
 ];
@@ -100,7 +100,7 @@ export default function ContactPage() {
     `.trim();
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "911234567890";
+    const whatsappNumber = "919490448001";
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
   };
 
@@ -294,14 +294,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="flex flex-col gap-4 sm:flex-row">
-                        <Button
-                          type="submit"
-                          size="lg"
-                          className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
-                          disabled={isSubmitting}
-                        >
-                          {isSubmitting ? "Sending..." : "Send Message"}
-                        </Button>
+                      
                         <Button
                           type="button"
                           size="lg"

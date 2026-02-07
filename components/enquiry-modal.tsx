@@ -54,7 +54,7 @@ export function EnquiryModal({ productName }: EnquiryModalProps) {
     const encodedMessage = encodeURIComponent(message);
     
     // WhatsApp number (replace with actual business number)
-    const whatsappNumber = "911234567890";
+    const whatsappNumber = "919490448001";
     
     // Open WhatsApp with pre-filled message
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");

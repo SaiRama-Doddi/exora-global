@@ -4,6 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Users, Award, Globe, TrendingUp } from "lucide-react";
+import { products } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "About Us - EXORA Global Exports",
@@ -41,6 +42,8 @@ const stats = [
 ];
 
 export default function AboutPage() {
+
+const productImages = products.map((p) => p.images[0]);
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -64,24 +67,24 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-foreground">Our Story</h2>
               <p className="mt-4 text-muted-foreground">
-                EXORA GLOBAL EXPORTS is a Dynamic export company committed to bridging global markets through quality products, transparent processes and dependable service. We work closely with trusted manufacturers and suppliers to deliver products that meet international standards.
+                EXORA GLOBAL is a Dynamic export company committed to bridging global markets through quality products, transparent processes and dependable service. We work closely with trusted manufacturers and suppliers to deliver products that meet international standards.
               </p>
-              <p className="mt-4 text-muted-foreground">
+            {/*   <p className="mt-4 text-muted-foreground">
                 With over 15 years of experience in the export industry, we have built
                 strong relationships with farmers, manufacturers, and suppliers across
                 India. Our commitment to quality and customer satisfaction has helped
                 us serve clients in over 50 countries.
-              </p>
+              </p> */}
               <p className="mt-4 text-muted-foreground">
                
 
-EGE is an experienced international export company dedicated ro connecting manufacturers wit global buyers,we source products directly from certified supplier and ensure.
+EXORA GLOBAL is an experienced international export company dedicated in connecting manufacturers with global buyers,we source products directly from certified supplier and ensure.
 
               </p>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-lg shadow-xl lg:aspect-square">
+            <div className="relative overflow-hidden rounded-lg shadow-xl lg:aspect-video">
               <Image
-                src="https://res.cloudinary.com/djjjd6of8/image/upload/v1770387315/exora-abouy_xyxrra.jpg"
+                src="https://res.cloudinary.com/djjjd6of8/image/upload/v1770465612/ChatGPT_Image_Feb_7_2026_05_29_11_PM_qztyu2.png"
                 alt="EXORA Warehouse"
                 fill
                 className="object-cover"
@@ -122,24 +125,30 @@ EGE is an experienced international export company dedicated ro connecting manuf
               </CardContent>
             </Card>
           </div>
-        </div>
+        </div>  
       </section>
 
       {/* Stats */}
-      <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <p className="text-4xl font-bold text-secondary-foreground md:text-5xl">
-                  {stat.value}
-                </p>
-                <p className="mt-2 text-secondary-foreground/80">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+  <section className="bg-secondary py-16 overflow-hidden">
+  <div className="container mx-auto px-4 lg:px-8">
+    <h2 className="text-center text-2xl font-semibold mb-8">
+      Our Export Products
+    </h2>
+
+    <div className="relative w-full overflow-hidden">
+      <div className="flex gap-8 animate-scroll">
+        {[...productImages, ...productImages].map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            className="h-28 w-28 object-cover rounded-lg shadow-sm"
+            alt="product"
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Core Values */}
       <section className="bg-background py-16">

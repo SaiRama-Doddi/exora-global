@@ -46,7 +46,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative h-[500px] w-full overflow-hidden md:h-[600px]">
+    <section className="relative h-125 w-full overflow-hidden md:h-150">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -61,7 +61,7 @@ export function HeroSection() {
             className="object-cover"
             priority={index === 0}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-primary/20 to-transparent" />
         </div>
       ))}
 

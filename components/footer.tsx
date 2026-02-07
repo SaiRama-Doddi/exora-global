@@ -59,8 +59,8 @@ export function Footer() {
                 className="rounded-md"
               />
               <div>
-                <span className="text-xl font-bold">EXORA</span>
-                <span className="block text-xs text-primary-foreground/80">GLOBAL</span>
+                <span className="text-xl font-bold">EXORA GLOBAL</span>
+{/*                 <span className="block text-xs text-primary-foreground/80">GLOBAL</span> */}
               </div>
             </Link>
             <p className="mb-4 text-sm text-primary-foreground/80">

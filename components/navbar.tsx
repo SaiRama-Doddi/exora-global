@@ -30,8 +30,8 @@ export function Navbar() {
             className="rounded-md"
           />
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-primary-foreground">EXORA</span>
-            <span className="text-xs text-primary-foreground/80">GLOBAL</span>
+            <span className="text-xl font-bold text-primary-foreground">EXORA GLOBAL</span>
+            {/* <span className="text-xs text-primary-foreground/80">GLOBAL</span> */}
           </div>
         </Link>
 

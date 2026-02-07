@@ -83,7 +83,7 @@ export const products: Product[] = [
 }
 , 
   {
-  id: "4",
+  id: "3",
   name: "Bamboo Salt – Mineral-Rich Gourmet Specialty Salt",
   slug: "bamboo-salt",
   category: "Specialty Foods",
@@ -115,7 +115,7 @@ export const products: Product[] = [
 }
 ,
   {
-  id: "5",
+  id: "4",
   name: "Organic Turmeric Powder – High Curcumin Export Grade",
   slug: "organic-turmeric-powder",
   category: "Organic Spices",
@@ -149,7 +149,7 @@ export const products: Product[] = [
 }
 ,
   {
-  id: "6",
+  id: "5",
   name: "Organic Chilli Powder – High Color & Rich Heat Export Grade",
   slug: "organic-chilli-powder",
   category: "Organic Spices",
@@ -183,7 +183,7 @@ export const products: Product[] = [
 }
 ,
 {
-  id: "7",
+  id: "6",
   name: "Organic Coconut Oil – Cold-Pressed Virgin Export Grade",
   slug: "organic-coconut-oil",
   category: "Organic Oils",
@@ -217,7 +217,7 @@ export const products: Product[] = [
 }
 ,
  {
-  id: "8",
+  id: "7",
   name: "Organic Cumin Seeds – High Aroma Export Grade",
   slug: "organic-cumin-seeds",
   category: "Organic Spices",
@@ -248,7 +248,101 @@ export const products: Product[] = [
     "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389405/cu3_wik9xs.jpg",
     "https://res.cloudinary.com/djjjd6of8/image/upload/v1770389615/cu5_odknfi.jpg"
   ]
+},
+
+{
+  id: "8",
+  name: "Raw Coconut Shell Powder – Natural Export Grade",
+  slug: "raw-coconut-shell-powder",
+  category: "Agro Products",
+  shortDescription:
+    "Finely processed coconut shell powder suitable for industrial, agricultural, and eco-friendly applications.",
+
+  description:
+    "Our Raw Coconut Shell Powder is produced from high-quality coconut shells that are carefully cleaned, dried, and finely ground to achieve uniform particle size and consistency. Known for its excellent binding and absorbent properties, this natural powder is widely used in incense sticks, mosquito coils, activated carbon production, plywood filler, and other industrial applications. The product is processed hygienically and packed to maintain quality during storage and export transportation.",
+
+  details: {
+    origin: "India",
+    packaging:
+      "25 kg and 50 kg moisture-resistant export bags with customized packaging options available.",
+    shelfLife: "24 months when stored in a dry environment",
+    moq: "As per buyer requirement",
+    certifications: [
+      "Export Grade",
+      "Eco-Friendly Product",
+      "Quality Tested"
+    ]
+  },
+
+  images: [
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466640/raw1_mbe5je.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466640/raw3_vltyvn.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466641/raw2_rju6sd.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466641/raw4_xbettd.jpg"
+  ]
 }
+,{
+  id: "9",
+  name: "Egg Shell Powder – Calcium-Rich Natural Powder",
+  slug: "egg-shell-powder",
+  category: "Agro Products",
+  shortDescription:
+    "High-calcium eggshell powder processed for agricultural, feed, and industrial applications.",
+
+  description:
+    "Egg Shell Powder is manufactured from cleaned and sterilized eggshells that are finely ground into a smooth powder. Rich in natural calcium carbonate, this product is commonly used in fertilizer blends, poultry feed supplements, soil conditioners, and eco-friendly industrial applications. The powder is processed under hygienic conditions to ensure purity, safety, and consistent quality for domestic and international buyers.",
+
+  details: {
+    origin: "India",
+    packaging:
+      "25 kg export-grade bags with moisture protection and customized packaging options.",
+    shelfLife: "24 months in dry storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "Export Grade",
+      "Calcium Rich",
+      "Quality Tested"
+    ]
+  },
+
+  images: ["https://res.cloudinary.com/djjjd6of8/image/upload/v1770466807/egg2_sbshmn.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466807/egg3_mh38wd.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466807/egg4_t05lmc.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770466807/egg1_ma3si8.jpg"
+  ]
+}
+,
+{
+  id: "10",
+  name: "Tamarind Seed Powder – Industrial & Food Grade",
+  slug: "tamarind-seed-powder",
+  category: "Agro Products",
+  shortDescription:
+    "Natural tamarind seed powder used in textile, food, adhesive, and pharmaceutical industries.",
+
+  description:
+    "Our Tamarind Seed Powder is produced from premium tamarind seeds that are cleaned, roasted, and finely milled to achieve high purity and uniform texture. Known for its thickening and binding properties, it is widely used in textile sizing, paper processing, adhesives, food applications, and pharmaceuticals. The product is processed under strict quality control to ensure export-grade consistency and long shelf stability.",
+
+  details: {
+    origin: "India",
+    packaging:
+      "25 kg and 50 kg export-grade laminated bags with custom packaging options available.",
+    shelfLife: "24 months under cool and dry storage conditions",
+    moq: "As per buyer requirement",
+    certifications: [
+      "Export Grade",
+      "Quality Tested",
+      "Industrial Grade"
+    ]
+  },
+
+  images: ["https://res.cloudinary.com/djjjd6of8/image/upload/v1770467030/tam1_myprf1.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770467030/tam3_tzqfyg.webp",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770467030/tam2_zxwchv.jpg",
+    "https://res.cloudinary.com/djjjd6of8/image/upload/v1770467030/tam4_ai5mw1.webp"
+  ]
+}
+
 
 ];
 

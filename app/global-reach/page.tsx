@@ -109,25 +109,7 @@ export default function GlobalReachPage() {
         </div>
       </section>
 
-      {/* Highlights */}
-      <section className="bg-muted py-16">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {highlights.map((highlight, index) => (
-              <Card key={index} className="border-none text-center shadow-lg">
-                <CardContent className="p-6">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-secondary/10">
-                    <highlight.icon className="h-7 w-7 text-secondary" />
-                  </div>
-                  <p className="text-3xl font-bold text-foreground">{highlight.value}</p>
-                  <p className="font-medium text-foreground">{highlight.label}</p>
-                  <p className="mt-1 text-sm text-muted-foreground">{highlight.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Regions */}
       <section className="bg-background py-16">
