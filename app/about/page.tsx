@@ -141,7 +141,7 @@ EXORA GLOBAL is an experienced international export company dedicated in connect
           <img
             key={index}
             src={img}
-            className="h-28 w-28 object-cover rounded-lg shadow-sm"
+            className="h-28 w-28 object-cover rounded-lg shadow-sm border-white border-4"
             alt="product"
           />
         ))}

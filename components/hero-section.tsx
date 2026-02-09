@@ -9,21 +9,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     image: "https://res.cloudinary.com/djjjd6of8/image/upload/v1770390232/d1_lkncmi.jpg",
-    title: "Connecting the World",
-    subtitle: "Through Trade",
-    description: "Your Partner in Global Export Solutions",
   },
   {
     image: "https://res.cloudinary.com/djjjd6of8/image/upload/v1770390371/tt_upmivy.jpg",
-    title: "Quality Products",
-    subtitle: "Worldwide Delivery",
-    description: "Premium goods sourced from trusted suppliers",
   },
   {
     image: "https://res.cloudinary.com/djjjd6of8/image/upload/v1770390502/chilli_wtwcvd.jpg",
-    title: "Global Network",
-    subtitle: "Local Expertise",
-    description: "Extensive reach across continents",
   },
 ];
 
@@ -33,7 +24,7 @@ export function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(timer);
   }, []);
 
@@ -46,83 +37,75 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative h-125 w-full overflow-hidden md:h-150">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={slide.image || "/placeholder.svg"}
-            alt={slide.title}
-            fill
-            className="object-cover"
-            priority={index === 0}
-          />
-          <div className="absolute inset-0 bg-linear-to-r from-primary/20 via-primary/20 to-transparent" />
-        </div>
-      ))}
-
-      <div className="relative z-10 flex h-full items-center">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-xl">
-            <h1 className="text-balance text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
-              {slides[currentSlide].title}
-              <span className="block text-secondary">{slides[currentSlide].subtitle}</span>
+    <section className="w-full bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid min-h-[520px] items-center gap-8 py-12 md:grid-cols-2">
+          
+          {/* LEFT CONTENT */}
+          <div className="max-w-xl space-y-6">
+            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
+              Global Network
+              <span className="block text-secondary">Through Trade</span>
             </h1>
-            <p className="mt-4 text-lg text-primary-foreground/90 md:text-xl">
-              {slides[currentSlide].description}
+
+            <p className="text-lg text-primary-foreground/90">
+              Your Partner in Global Export Solutions. We deliver quality
+              products worldwide with trusted sourcing and logistics expertise.
             </p>
-            <div className="mt-8 flex gap-4">
+
+            <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 cursor-pointer">
                   Get a Quote
                 </Button>
               </Link>
+
               <Link href="/products">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary cursor-pointer"
                 >
                   View Products
                 </Button>
               </Link>
             </div>
           </div>
+
+          {/* RIGHT IMAGE SLIDER */}
+          <div className="relative h-[320px] w-full overflow-hidden rounded-2xl md:h-[420px] lg:h-[480px]">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-700 ${
+                  index === currentSlide ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <Image
+                  src={slide.image}
+                  alt="slide"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+
+            {/* Controls */}
+            <button
+              onClick={prevSlide}
+              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/30 p-2 text-white backdrop-blur"
+            >
+              <ChevronLeft />
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/30 p-2 text-white backdrop-blur"
+            >
+              <ChevronRight />
+            </button>
+          </div>
         </div>
-      </div>
-
-      {/* Navigation Buttons */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-primary-foreground/20 p-2 text-primary-foreground backdrop-blur-sm transition-colors hover:bg-primary-foreground/40"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="h-6 w-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-primary-foreground/20 p-2 text-primary-foreground backdrop-blur-sm transition-colors hover:bg-primary-foreground/40"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="h-6 w-6" />
-      </button>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 gap-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`h-2 w-8 rounded-full transition-colors ${
-              index === currentSlide ? "bg-secondary" : "bg-primary-foreground/50"
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
       </div>
     </section>
   );
