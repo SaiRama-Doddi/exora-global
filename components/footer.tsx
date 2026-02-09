@@ -11,12 +11,19 @@ const quickLinks = [
   { href: "/contact", label: "Contact Us" },
 ];
 
-const productLinks = [
+export const productLinks = [
   { href: "/products/makhana", label: "Makhana" },
   { href: "/products/soapnuts", label: "Soapnuts" },
   { href: "/products/organic-turmeric-powder", label: "Organic Turmeric" },
   { href: "/products/organic-chilli-powder", label: "Organic Chilli" },
   { href: "/products/organic-coconut-oil", label: "Coconut Oil" },
+
+  // Remaining products
+  { href: "/products/bamboo-salt", label: "Bamboo Salt" },
+  { href: "/products/organic-cumin-seeds", label: "Organic Cumin Seeds" },
+  { href: "/products/raw-coconut-shell-powder", label: "Coconut Shell Powder" },
+  { href: "/products/egg-shell-powder", label: "Egg Shell Powder" },
+  { href: "/products/tamarind-seed-powder", label: "Tamarind Seed Powder" },
 ];
 
 export function Footer() {
@@ -28,17 +35,17 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <h3 className="text-xl font-semibold">Get in Touch with Us</h3>
             <div className="flex flex-wrap items-center justify-center gap-6">
-              <a href="mailto:info@exoraexports.com" className="flex items-center gap-2 text-sm hover:text-secondary">
+              <a href="mailto:info@exoraglobal.com" className="flex items-center gap-2 text-sm hover:text-secondary">
                 <Mail className="h-4 w-4" />
-                info@exoraexports.com
+               info@exoraglobal.com
               </a>
-              <a href="tel:+911234567890" className="flex items-center gap-2 text-sm hover:text-secondary">
+              <a href="tel:+919490448001" className="flex items-center gap-2 text-sm hover:text-secondary">
                 <Phone className="h-4 w-4" />
-                +91 123 456 7890
+               +91 9490448001
               </a>
               <span className="flex items-center gap-2 text-sm">
                 <MapPin className="h-4 w-4" />
-                Export Lane, Mumbai, India
+               Flat No.301, Akruthi's Venkat Klayan Residency Balaji Hill Colony, Road No.2A, Nizampeta - 500090
               </span>
             </div>
           </div>
@@ -101,24 +108,26 @@ export function Footer() {
           </div>
 
           {/* Products */}
-          <div>
-            <h4 className="mb-4 text-lg font-semibold">Our Products</h4>
-            <ul className="space-y-2">
-              {productLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-secondary"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+         <div>
+  <h4 className="mb-4 text-lg font-semibold">Our Products</h4>
+
+  <ul className="grid grid-cols-2 gap-x-6 gap-y-2">
+    {productLinks.map((link) => (
+      <li key={link.href}>
+        <Link
+          href={link.href}
+          className="text-sm text-primary-foreground/80 transition-colors hover:text-secondary"
+        >
+          {link.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
           {/* Newsletter */}
-          <div>
+       {/*    <div>
             <h4 className="mb-4 text-lg font-semibold">Stay Updated</h4>
             <p className="mb-4 text-sm text-primary-foreground/80">
               Subscribe to our newsletter for the latest updates on products and services.
@@ -136,7 +145,7 @@ export function Footer() {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
 
